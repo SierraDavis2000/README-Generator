@@ -12,7 +12,7 @@
   ---
   ## Contents 
   1. [Description] (#description)
-  2. [Installation] <a href = "installation"></a>
+  2. [Installation] (#installation)
   3. [Usage] <a href = "usage"></a>
   4. [Contributing] <a href = "contributing"></a>
   5. [Tests] <a href = 'tests"></a>
