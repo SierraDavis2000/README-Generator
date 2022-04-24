@@ -15,13 +15,14 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+    ## Description
     ${data.description}
 
-    ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+    ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
    
     
-    [A deployed version can be viewed here:](${data.url})
-    [Please view the GitHub Repo here:](${data.repo})
+    A deployed version can be viewed here: (${data.url})
+    Please view the GitHub Repo here: (${data.repo})
 
   ---
   ## Contents 
@@ -34,29 +35,29 @@ function generateMarkdown(data) {
   7. [Questions] (#questions)
 
   ---
-  ## Installation
+  ## Installation <a name="installation"></a>
     ${data.installation}
 
- ## Usage
+ ## Usage <a name="usage"></a>
     ${data.usage}
 
- ## Contributing Guidelines
+ ## Contributing Guidelines <a name="contributing"></a>
     ${data.contributing}
 
- ## Tests
+ ## Tests <a name="tests"></a>
     ${data.tests}
   
   
-  ## License
+  ## License <a name="license"></a>
     ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
-    <br />
+    
     This application is covered by the ${data.license} license.
 
- ## Please Contact for Further Questions
-    <br />
-    :octocat: Find me on GitHub: [${data.username}](https://github.com/${data.username})<br />
-    <br />
-    Email me with any questions: ${data.email}<br /><br />
+ ## Please Contact for Further Questions <a name="questions"></a>
+   
+    Find me on GitHub: [${data.username}](https://github.com/${data.username})
+    
+    Email me with any questions: ${data.email}
   `;
 }
 
